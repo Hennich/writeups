@@ -27,3 +27,6 @@ In the end the following worked
 * Use 22 Bit table
 * Compute inverses of possible n before
 * try to use addition of points (instead of multiplication) for speedup
+
+Finished Lookup table: 162.18 seconds
+Finished with all points: 41.88 seconds
