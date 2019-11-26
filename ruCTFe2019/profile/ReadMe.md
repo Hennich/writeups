@@ -49,6 +49,8 @@ Entry `priv[i]` is hashed `msg[i]` times.
 * The last two entries aren't hashed.
 * If our message hash contains 0-Byte, that entry is not hashed.
 
+Code is:
+
     def sign(self, msg, priv):
         signature = [n_hash(x, sha256, y) for x, y in zip(priv, split_message(msg, 8, 18))] 
         return join_signature(signature)
